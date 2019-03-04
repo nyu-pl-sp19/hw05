@@ -12,11 +12,11 @@ let drop (n: int) (xs: 'a list) : 'a list =
 
     
 (** Part 3 *)
-let reverse : 'a list -> 'a list =
+let reverse (x: 'a list) : 'a list =
   let rec rev acc = function
     | [] -> acc
     | x :: xs -> rev (x :: acc) xs
-  in rev []
+  in rev [] x
 
 let rec concat (xs: 'a list) (ys: 'a list) : 'a list =
   failwith "Not yet implemented"
